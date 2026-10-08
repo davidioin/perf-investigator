@@ -2,6 +2,9 @@
 
 Compare two SDS revisions on the same workloads, inspect measured performance changes, and ask a read-only Codex agent to explain the evidence and suggest follow-up experiments.
 
+# **Why?**
+For those trying to diagnose a recent slowdown in SDS or those curious how their recent changes affected SDS performance
+
 ## Run
 
 From the repository directory, run `python3 demo.py`.
@@ -15,7 +18,7 @@ Future support for Bits AI hopefully to come.
 1. Select a local SDS checkout and baseline/comparison revisions.
 2. You will see resolved commits and after a waiting period,  AI generated one-line summaries per commit.
 3. The run button uses the same Criterion harness against disposable snapshots of both revisions. Process takes 5-10 min for now.
-4. Explore timings, uncertainty, and repeat consistency. Click **Run agent investigation** for hypotheses, evidence links, and suggested experiments.
+4. Explore timings, uncertainty, and repeat consistency. Click Run agent investigation for hypotheses, evidence links, and suggested experiments.
 
 The local browser UI includes live logs, cancellation, downloadable reports, and saved run history. AI summaries and investigations send relevant source/evidence to the configured model using your Codex login. The investigation does not edit code or run experiments.
 
